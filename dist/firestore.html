@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Poc Firebase</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<div id="firestore_page" class="container">
+		<h1>Test database</h1>
+		<h2>Liste des posts</h2>
+		<ul class="posts_list"></ul>
+		<button type="button" class="get_posts_button">Récupérer les posts</button>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyCKBM0adIIjLMm1I57-MvVgmmM_ePMC6Ds",
+			authDomain: "poc-firebase-f8910.firebaseapp.com",
+			databaseURL: "https://poc-firebase-f8910.firebaseio.com",
+			projectId: "poc-firebase-f8910",
+			storageBucket: "poc-firebase-f8910.appspot.com",
+			messagingSenderId: "400001186945"
+		};
+		firebase.initializeApp(config);
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+
+	<script src="main.js"></script>
+</body>
+</html>

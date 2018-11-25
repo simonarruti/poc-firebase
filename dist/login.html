@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Poc Firebase</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<div id="login_page" class="container">
+		<h1>Connexion</h1>
+		<form>
+			<div class="form-group">
+				<label>Email</label>
+				<input type="text" class="email_field form-control">
+			</div>
+
+			<div class="form-group">
+				<label>Mot de passe</label>
+				<input type="password" class="password_field form-control">
+			</div>
+			<button type="button" class="btn btn-primary login_button">Se connecter</button>
+		</form>
+
+		<p class="display_error_message"></p>
+		<p class="display_success_message"></p>
+	</div>
+	
+	<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyCKBM0adIIjLMm1I57-MvVgmmM_ePMC6Ds",
+			authDomain: "poc-firebase-f8910.firebaseapp.com",
+			databaseURL: "https://poc-firebase-f8910.firebaseio.com",
+			projectId: "poc-firebase-f8910",
+			storageBucket: "poc-firebase-f8910.appspot.com",
+			messagingSenderId: "400001186945"
+		};
+		firebase.initializeApp(config);
+	</script>
+	<script src="main.js"></script>
+</body>
+</html>
